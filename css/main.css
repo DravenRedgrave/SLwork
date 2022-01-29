@@ -1,0 +1,792 @@
+html,body{
+  margin: 0px;
+  padding: 0px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+  background-color: #161616;
+  height: 12vh;
+}
+
+nav{
+  display: none;
+  position: absolute;
+  background-color: #161616;
+  right: 0%;
+  top: 120%;
+  border: 2px solid #e4e7e9;
+}
+
+nav.active{
+  display: block;
+}
+
+nav ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul li{
+    padding: 10px;
+}
+
+nav li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  font-family: "Zona Pro";
+}
+
+.head-container{
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.menu{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+}
+
+.ease{
+  padding-top: 15px;
+  text-align: right;
+}
+
+.ease p{
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Zona Pro";
+}
+
+.toggle-menu{
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.toggle-menu p{
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Zona Pro";
+  text-transform: uppercase;
+  margin: 0px;
+  padding-top: 6px;
+}
+
+@media (max-width:1250px) {
+  header{
+    height: auto;
+  }
+  .head-container{
+    margin: 0px 10px;
+  }
+}
+
+.main{
+  width: 100%;
+  height: 48vh;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.announcement{
+  width: 100%;
+  height: 83vh;
+}
+
+.announcement-container{
+  max-width: 1250px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding-top: 150px;
+}
+
+.announcement-container h2{
+  font-size: 36px;
+  line-height: 44px;
+  color: #18181a;
+  font-weight: bold;
+  font-family: "Zona Pro";
+}
+
+.announcement-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.announcement-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.announcement-title p{
+  font-size: 50px;
+  line-height: 60px;
+  color: #18181a;
+  font-weight: bold;
+  font-family: "Zona Pro";
+  margin: 0px;
+}
+
+.announcement-title span{
+  font-size: 22px;
+  line-height: 32px;
+  color: #18181a;
+  font-weight: bold;
+  font-family: "Zona Pro";
+  padding-top: 20px;
+}
+
+.announcement-item{
+  position: relative;
+  width: 380px;
+  border: 2px solid #e4e7e9;
+  padding: 50px 20px 10px 20px;
+  margin-right: 35px;
+}
+
+.head{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #ffd43c;
+}
+
+.announcement-item h3{
+  font-size: 21px;
+  line-height: 32px;
+  color: #5c5c5c;
+  font-weight: bold;
+  font-family: "Zona Pro";
+}
+
+.announcement-item span{
+  font-size: 21px;
+  line-height: 32px;
+  color: #656565;
+  font-family: "Zona Pro";
+}
+
+.status{
+  display: flex;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.online{
+  line-height: 32px;
+  color: #18181a;
+  font-family: "Zona Pro";
+  margin: 0px;
+  margin-left: 20px;
+}
+
+.elipce{
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #ffd43c;
+}
+
+.elipce-off{
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #5c5c5c;
+}
+
+@media (max-width:1250px) {
+  .announcement{
+    height: auto;
+  }
+  .announcement-container{
+    margin: 10px;
+    padding-top: 30px;
+  }
+  .announcement-flex{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .announcement-item{
+    margin: 20px;
+  }
+}
+
+@media (max-width:480px){
+  .announcement-container h2{
+    text-align: center;
+  }
+  .announcement-title p{
+    font-size: 35px;
+  }
+  .announcement-title span{
+    padding-top: 5px;
+  }
+}
+
+.day{
+  width: 100%;
+  height: 100vh;
+}
+
+.day-container{
+  max-width: 1250px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 70px;
+}
+
+.bg-figure{
+  position: absolute;
+  left: 0;
+}
+
+.day-container h2{
+  font-size: 36px;
+  line-height: 44px;
+  color: #18181a;
+  font-weight: bold;
+  font-family: "Zona Pro";
+  text-transform: uppercase;
+}
+
+video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.video-wrapper {
+  margin: 47px 0px 0px 20px;
+  height: 520px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play{
+  z-index: 2;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background-color: rgba(57, 54, 60, 0.5);
+  border: 1px solid #39363c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.play i{
+  color: #fff;
+
+}
+
+@media (max-width:1200px) {
+  .day{
+    height: auto;
+  }
+  .bg-figure{
+    display: none;
+  }
+  .day-container{
+    margin: 0px 10px;
+  }
+  .day-container h2{
+    font-size: 25px;
+    text-align: center;
+  }
+  .video-wrapper{
+    margin: 0px;
+  }
+  video{
+    height: auto;
+  }
+}
+
+@media (max-width:768px){
+  .video-wrapper{
+    height: 320px;
+  }
+  .play{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width:768px){
+  .video-wrapper{
+    height: 220px;
+  }
+}
+
+.question{
+  width: 100%;
+  height: 80vh;
+}
+
+.container-question{
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.container-question h2{
+  font-size: 36px;
+  line-height: 44px;
+  color: #18181a;
+  font-weight: bold;
+  font-family: "Zona Pro";
+  margin: 0px;
+}
+
+.spoiler{
+  padding-top: 20px;
+}
+
+
+.spoiler-item{
+  max-height: 245px;
+  background-color: #fff;
+  border: 2px solid #18181a;
+  margin-top: 20px;
+  cursor: pointer;
+  border-left: none;
+  border-right: none;
+  position: relative;
+}
+
+
+.spoiler-title{
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 30px;
+  font-size: 22px;
+  line-height: 32px;
+  color: #18181a;
+  font-weight: bold;
+  font-family: "Zona Pro";
+}
+
+
+
+.opened {
+  opacity: 1;
+}
+
+.opened .vertical {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+}
+
+.opened .horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.circle {
+    position: absolute;
+    width: 2.55em;
+    height: 2.5em;
+    right: 0;
+}
+ .circle .horizontal {
+    position: absolute;
+    background-color: #18181a;
+    width: 30px;
+    height: 5px;
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -2.5px;
+}
+ .circle .vertical {
+    position: absolute;
+    background-color: #18181a;
+    width: 5px;
+    height: 30px;
+    left: 50%;
+    margin-left: -2.5px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+
+
+.spoiler-text{
+  display: none;
+  padding: 20px 30px;
+}
+
+.spoiler-text p{
+  font-size: 16px;
+  line-height: 24px;
+  color: #18181a;
+  font-family: "Zona Pro";
+}
+
+@media (max-width:1200px) {
+  .question{
+    height: auto;
+  }
+  .container-question h2{
+    text-align: center;
+  }
+.spoiler{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.spoiler-item{
+  max-width: 80%;
+  max-height: 100%;
+}
+.circle{
+  display: none;
+}
+}
+
+
+@media (max-width:768px){
+  .container-question h2{
+    font-size: 20px;
+    text-align: center;
+  }
+  .spoiler-title h3{
+    font-size: 13px;
+  }
+  .spoiler-text p{
+    font-size: 11px
+  }
+}
+
+
+@media (max-width:360px){
+  .container-question h2{
+    font-size: 20px;
+  }
+}
+
+.quest{
+  width: 100%;
+  height: 100vh;
+}
+
+.quest-container{
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+
+.quest-container h2{
+  font-size: 36px;
+  line-height: 44px;
+  color: #18181a;
+  font-weight: bold;
+  font-family: "Zona Pro";
+  text-transform: uppercase;
+}
+
+.form{
+  position: relative;
+  max-width: 915px;
+  padding: 35px 20px 10px 20px;
+  border: 2px solid #e4e7e9;
+}
+
+.inp{
+  width: 864px;
+  height: 43px;
+  background-color: #ffffff;
+  border: 2px solid #e4e7e9;
+}
+
+::-webkit-input-placeholder{
+  font-size: 16px;
+  line-height: 24px;
+  color: #5c5c5c;
+  font-family: "Zona Pro";
+  padding-left: 10px;
+}
+
+.messages{
+  margin-top: 30px;
+  width: 864px;
+  height: 140px;
+  background-color: #ffffff;
+  border: 2px solid #e4e7e9;
+}
+
+.form p{
+  font-size: 16px;
+  line-height: 24px;
+  color: #18181a;
+  font-family: "Zona Pro";
+}
+
+.btn-send{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.btn-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+
+.btn-box p{
+  font-size: 16px;
+  line-height: 24px;
+  color: #5c5c5c;
+  font-family: "Zona Pro";
+}
+
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type=checkbox], input[type=radio] {
+    display: none;
+}
+
+input[type=checkbox] + label span {
+    background-image: url("../img/Vector.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 24pt;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 0.25em;
+    margin: 4px 8px 8px 8px;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+ input[type=checkbox]:checked + label span::after {
+    content: "\2713";
+    color: #ffd43c;
+}
+
+.btn-send a{
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  color: #18181a;
+  font-family: "Zona Pro";
+  text-align: center;
+  background-color: #ffd43c;
+  padding: 15px 50px;
+}
+
+
+@media (max-width:1250px) {
+  .quest{
+    height: auto;
+  }
+  .quest-container{
+    max-width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form{
+    max-width: 100%;
+  }
+  .inp{
+    width: 100%;
+  }
+  .messages{
+    width: 100%;
+  }
+}
+
+@media (max-width:768px) {
+  .quest-container h2{
+    font-size: 25px;
+  }
+    .btn-box p{
+      font-size: 12px;
+    }
+    .btn-send a{
+      padding: 15px 30px;
+    }
+      .quest-container{
+        max-width: 80%;
+        margin: 0 auto;
+      }
+}
+
+@media (max-width:460px) {
+    .btn-box p{
+      font-size: 10px;
+    }
+    .btn-send a{
+      padding: 10px 10px;
+      font-size: 14px;
+    }
+}
+
+
+.poster{
+  width: 100%;
+  height: 80vh;
+  background-color: #161616;
+}
+
+.poster-container{
+  padding-top: 55px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.poster-container h2{
+  font-size: 56px;
+  line-height: 64px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Zona Pro";
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom:60px;
+}
+
+
+
+.slider-item span{
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffd43c;
+  font-weight: bold;
+  font-family: "Zona Pro";
+  text-transform: uppercase;
+}
+
+
+.slider-item p{
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Zona Pro";
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+
+.slider-item{
+  max-width: 400px;
+  margin: 0px 10px;
+}
+
+.slider-item img{
+  max-width: 100%;
+}
+
+
+.slider .slick-prev:before{
+  font-size: 0px;
+}
+
+.slider .slick-next:before{
+  font-size: 0px;
+}
+
+.slider .slick-prev, .slider .slick-next{
+  top: 40%;
+  transform: translate(0,-40%);
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  z-index: 10;
+  font-size: 0;
+  width: 56px;
+  height: 56px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../img/next.png");
+}
+
+.slider .slick-arrow.slick-prev {
+  left: -1%;
+  background: url("../img/prev.png");
+}
+
+@media (max-width:1250px) {
+  .poster{
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .poster-container{
+    margin: 10px;
+  }
+}
+
+
+@media (max-width:768px) {
+  .poster-container h2{
+    text-align: center;
+  }
+}
+
+@media (max-width:480px){
+  .slider-item{
+    max-width: 200px;
+  }
+  .slider-item p{
+    font-size: 16px;
+  }
+}
+
+
+
+@font-face {
+  font-family: "Zona Pro";
+  src: url("../fonts/ZonaPro-Bold.woff2");
+}
